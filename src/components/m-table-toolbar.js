@@ -10,7 +10,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Tooltip from "@material-ui/core/Tooltip";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/styles";
-import { lighten } from "@material-ui/core/styles/colorManipulator";
+import { lighten } from "@material-ui/core/styles";
 import classNames from "classnames";
 import { CsvBuilder } from "filefy";
 import PropTypes, { oneOf } from "prop-types";
@@ -45,9 +45,8 @@ export class MTableToolbar extends React.Component {
       .sort((a, b) =>
         a.tableData.columnOrder > b.tableData.columnOrder ? 1 : -1
       );
-    const data = (this.props.exportAllData
-      ? this.props.data
-      : this.props.renderData
+    const data = (
+      this.props.exportAllData ? this.props.data : this.props.renderData
     ).map((rowData) =>
       columns.map((columnDef) => this.props.getFieldValue(rowData, columnDef))
     );

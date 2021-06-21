@@ -35,7 +35,7 @@ var MComponents = _interopRequireWildcard(require("./components"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _colorManipulator = require("@material-ui/core/styles/colorManipulator");
+var _styles = require("@material-ui/core/styles");
 
 function _getRequireWildcardCache(nodeInterop) {
   if (typeof WeakMap !== "function") return null;
@@ -92,7 +92,7 @@ var OverlayLoading = function OverlayLoading(props) {
         display: "table",
         width: "100%",
         height: "100%",
-        backgroundColor: (0, _colorManipulator.alpha)(
+        backgroundColor: (0, _styles.alpha)(
           props.theme.palette.background.paper,
           0.7
         ),
@@ -129,7 +129,7 @@ var OverlayError = function OverlayError(props) {
         display: "table",
         width: "100%",
         height: "100%",
-        backgroundColor: (0, _colorManipulator.alpha)(
+        backgroundColor: (0, _styles.alpha)(
           props.theme.palette.background.paper,
           0.7
         ),

@@ -75,7 +75,7 @@ var _Typography = _interopRequireDefault(
 
 var _styles = require("@material-ui/styles");
 
-var _colorManipulator = require("@material-ui/core/styles/colorManipulator");
+var _styles2 = require("@material-ui/core/styles");
 
 var _classnames = _interopRequireDefault(require("classnames"));
 
@@ -771,7 +771,7 @@ var styles = function styles(theme) {
       theme.palette.type === "light"
         ? {
             color: theme.palette.secondary.main,
-            backgroundColor: (0, _colorManipulator.lighten)(
+            backgroundColor: (0, _styles2.lighten)(
               theme.palette.secondary.light,
               0.85
             ),

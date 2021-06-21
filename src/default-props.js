@@ -5,7 +5,7 @@ import Paper from "@material-ui/core/Paper";
 import TablePagination from "@material-ui/core/TablePagination";
 import * as MComponents from "./components";
 import PropTypes from "prop-types";
-import { alpha } from "@material-ui/core/styles/colorManipulator";
+import { alpha } from "@material-ui/core/styles";
 
 const OverlayLoading = (props) => (
   <div
